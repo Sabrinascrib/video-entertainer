@@ -19,3 +19,79 @@ body {
   box-sizing: border-box;
   font-family: var(--roboto);
 }
+
+.video {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+}
+
+.video :hover {
+  transform: scale(1.6);
+}
+
+.video .img {
+  background-image: url("img/jin-bts-3.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 196.88px;
+  width: 350px;
+}
+
+.video video {
+  width: 350px;
+  height: 196.88px;
+  display: none;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.video-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.video-info h1 {
+  font-size: calc(19 / 16 * 1rem);
+  color: var(--black);
+  font-weight: 500;
+  line-height: 30px;
+  width: 260px;
+}
+
+.video-info span {
+  color: var(--gray2);
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.video-info p {
+  color: var(--gray2);
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-self: center;
+  margin-top: 35px;
+}
+
+.buttons button {
+  border: none;
+  height: 30px;
+  text-transform: uppercase;
+  width: 320px;
+}
+
+.buttons button svg {
+  font-size: 15spx;
+}
