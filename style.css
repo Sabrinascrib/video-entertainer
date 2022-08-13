@@ -18,16 +18,32 @@
 body {
   box-sizing: border-box;
   font-family: var(--roboto);
+  background-color: #f9f9f9;
+}
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 100px;
 }
 
 .video {
   display: flex;
   width: 350px;
   flex-direction: column;
+  background-color: #f9f9f9;
+  margin-bottom: 50px;
+}
+
+.videos :hover {
+  transform: scale(1.1);
 }
 
 .video :hover {
-  transform: scale(1.6);
+  transform: scale(1);
 }
 
 .video .img {
@@ -51,6 +67,7 @@ body {
   flex-direction: row;
   width: 320px;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .video-info img {
@@ -78,18 +95,19 @@ body {
 }
 
 .buttons {
-  display: flex;
   flex-direction: column;
   width: 320px;
   align-self: center;
   margin-top: 35px;
+  display: none;
 }
 
 .buttons button {
   border: none;
-  height: 30px;
+  height: 40px;
   text-transform: uppercase;
   width: 320px;
+  margin-bottom: 10px;
 }
 
 .buttons button svg {
