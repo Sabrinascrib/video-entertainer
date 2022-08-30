@@ -30,7 +30,7 @@ body {
   margin-top: 100px;
 }
 
-.video {
+.yt-video {
   display: flex;
   width: 350px;
   flex-direction: column;
@@ -38,17 +38,17 @@ body {
   transition: 200ms ease-out 0.5s;
 }
 
-.video:hover {
+.yt-video:hover {
   transform: scale(1.2);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.194);
 }
 
-.video:hover .buttons {
+.yt-video:hover .buttons {
   visibility: visible;
   transition-delay: 0.5s;
 }
 
-.video .img {
+.yt-video .img {
   background-image: url("img/jin-bts-3.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -58,10 +58,9 @@ body {
   width: 350px;
 }
 
-.video video {
+.yt-video video {
   width: 350px;
   height: 196.88px;
-  display: none;
 }
 
 .video-info {
@@ -114,4 +113,57 @@ body {
 
 .buttons button svg {
   font-size: 15spx;
+}
+
+.player {
+  max-width: 750px;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.player__button {
+  display: none;
+}
+
+.player__controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%) translateY(-5px);
+  transition: all 0.3s;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.player:hover .player__controls {
+  transform: translateY(0);
+}
+
+.player:hover .progress {
+  height: 7px;
+}
+
+.player__controls > * {
+  flex: 1;
+}
+
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 5px;
+  transition: height 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.progress__filled {
+  width: 0%;
+  background: #ff0000;
+  flex: 0;
+  flex-basis: 0%;
 }
