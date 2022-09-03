@@ -48,21 +48,6 @@ body {
   transition-delay: 0.5s;
 }
 
-.yt-video .img {
-  background-image: url("img/jin-bts-3.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 196.88px;
-  width: 350px;
-}
-
-.yt-video video {
-  width: 350px;
-  height: 196.88px;
-}
-
 .video-info {
   display: flex;
   flex-direction: row;
@@ -120,7 +105,6 @@ body {
   position: relative;
   font-size: 0;
   overflow: hidden;
-  display: none;
 }
 
 .player__button {
